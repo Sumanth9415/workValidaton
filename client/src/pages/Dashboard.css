@@ -1,0 +1,103 @@
+/* client/src/pages/Dashboard.css */
+.dashboard-container {
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  margin-top: 30px;
+}
+
+.dashboard-container h1, .dashboard-container h2 {
+  color: var(--dark-color);
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 10px;
+}
+
+.welcome-message {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.section-title {
+  margin-top: 40px;
+  margin-bottom: 25px;
+  color: var(--primary-color);
+  border-bottom: 1px dashed var(--border-color);
+  padding-bottom: 8px;
+}
+
+.task-list, .submission-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.task-card, .submission-card {
+  background-color: var(--light-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.task-card h3, .submission-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.task-card p, .submission-card p {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.task-meta, .submission-meta {
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.task-meta span, .submission-meta span {
+    background-color: #e9ecef;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.task-actions, .submission-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* Difficulty Badges */
+.difficulty-easy { color: var(--success-color); font-weight: bold; }
+.difficulty-medium { color: var(--warning-color); font-weight: bold; }
+.difficulty-hard { color: var(--danger-color); font-weight: bold; }
+
+.quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+/* Admin Specific */
+.admin-actions {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}

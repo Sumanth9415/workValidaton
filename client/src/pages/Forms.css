@@ -1,0 +1,69 @@
+/* client/src/pages/Forms.css */
+.form-container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.form-container h1 {
+    text-align: center;
+    color: var(--dark-color);
+    margin-bottom: 30px;
+}
+
+.app-form .form-group {
+    margin-bottom: 20px;
+}
+
+.app-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.app-form input[type="text"],
+.app-form input[type="email"],
+.app-form input[type="password"],
+.app-form input[type="number"],
+.app-form input[type="datetime-local"],
+.app-form textarea,
+.app-form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.app-form input[type="checkbox"],
+.app-form input[type="radio"] {
+    margin-right: 10px;
+}
+
+.app-form button[type="submit"] {
+    margin-top: 20px;
+    width: auto;
+    padding: 12px 25px;
+}
+
+.app-form .cancel-btn {
+    background-color: var(--secondary-color);
+    color: white;
+    margin-left: 10px;
+}
+
+.app-form .cancel-btn:hover {
+    background-color: #5a6268;
+}
+
+/* Specific for Profile Redeem Form */
+.redeem-form .redemption-info {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 15px;
+}

@@ -1,0 +1,59 @@
+/* client/src/pages/Profile.css */
+.profile-container {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    margin-top: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.profile-container h1 {
+    color: var(--dark-color);
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 15px;
+}
+
+.profile-details p {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px; /* Align content for better look */
+    color: #444;
+}
+
+.profile-details strong {
+    color: #333;
+    display: inline-block;
+    width: 120px; /* Align labels */
+}
+
+.wallet-section {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 2px solid var(--border-color);
+}
+
+.wallet-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.redeem-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.redeem-form .form-group label {
+    text-align: left;
+}
+
+.redeem-form .btn {
+    width: 100%;
+}

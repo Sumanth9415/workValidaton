@@ -1,0 +1,106 @@
+/* client/src/pages/TaskDetail.css */
+.task-detail-container {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    margin-top: 30px;
+    max-width: 800px; /* Constrain width for readability */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.task-detail-container h1 {
+    color: var(--dark-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.task-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 25px;
+    border-bottom: 1px dashed var(--border-color);
+    padding-bottom: 20px;
+}
+
+.task-meta-detail p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.task-meta-detail strong {
+    color: var(--dark-color);
+}
+
+.deadline-passed {
+    color: var(--danger-color);
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.submission-section, .admin-task-actions {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 2px solid var(--border-color);
+}
+
+.submission-section h2, .admin-task-actions h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.pow-section {
+    background-color: var(--light-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.pow-section h3 {
+    color: var(--dark-color);
+    margin-bottom: 15px;
+}
+
+.pow-section p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.pow-results {
+    background-color: #e6ffed; /* Light green */
+    border: 1px solid #28a745;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.pow-results p {
+    margin: 5px 0;
+    color: #218838;
+    font-weight: 500;
+}
+
+.pow-results strong {
+    color: #1a5e2a;
+}
+
+.back-btn {
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.deadline-message {
+    background-color: #fff3cd; /* Yellowish background */
+    color: #856404; /* Dark yellow text */
+    border: 1px solid #ffeeba;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bold;
+}

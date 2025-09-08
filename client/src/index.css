@@ -1,0 +1,125 @@
+/* client/src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* 
+  Defining our new color palettes using CSS variables.
+  We have a default (light) theme and a dark theme.
+*/
+:root {
+  /* Vibrant Color Palette */
+  --primary-gradient: linear-gradient(45deg, #4F46E5, #818CF8); /* Indigo Gradient */
+  --accent-color: #F59E0B; /* Amber */
+  --success-color: #10B981; /* Emerald */
+  --danger-color: #EF4444; /* Red */
+  --warning-color: #FBBF24; /* Amber-400 */
+  
+  /* Light Theme Variables */
+  --bg-color: #F3F4F6; /* Cool Gray 100 */
+  --card-bg: #FFFFFF;
+  --text-color: #1F2937; /* Cool Gray 800 */
+  --subtle-text-color: #6B7280; /* Cool Gray 500 */
+  --border-color: #E5E7EB; /* Cool Gray 200 */
+  
+  /* Box Shadows for depth */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Dark Theme Overrides */
+body[data-theme='dark'] {
+  --bg-color: #111827; /* Cool Gray 900 */
+  --card-bg: #1F2937; /* Cool Gray 800 */
+  --text-color: #F9FAFB; /* Cool Gray 50 */
+  --subtle-text-color: #9CA3AF; /* Cool Gray 400 */
+  --border-color: #374151; /* Cool Gray 700 */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+/* Updated Global Button Styles */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-primary { 
+  background-image: var(--primary-gradient); 
+  color: white; 
+  box-shadow: var(--shadow-md);
+}
+
+.btn-secondary { 
+  background-color: var(--card-bg); 
+  color: var(--text-color); 
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-success { background-color: var(--success-color); color: white; box-shadow: var(--shadow-md); }
+.btn-danger { background-color: var(--danger-color); color: white; box-shadow: var(--shadow-md); }
+
+/* Updated Messages */
+.error-message {
+  color: var(--danger-color);
+  background-color: rgba(239, 68, 68, 0.1);
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border-left: 4px solid var(--danger-color);
+}
+
+.success-message {
+  color: var(--success-color);
+  background-color: rgba(16, 185, 129, 0.1);
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border-left: 4px solid var(--success-color);
+}
+
+/* Updated Card Styles */
+.task-card, .submission-card, .form-container, .profile-container, .leaderboard-container, .task-detail-container {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}

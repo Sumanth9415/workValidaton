@@ -1,0 +1,112 @@
+/* client/src/pages/Leaderboard.css */
+.leaderboard-container {
+    padding: 40px;
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    margin-top: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.leaderboard-container h1 {
+    color: var(--text-color);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.leaderboard-container p {
+    font-size: 1.1rem;
+    color: var(--subtle-text-color);
+    margin-bottom: 40px;
+}
+
+/* Add a wrapper for responsiveness */
+.table-wrapper {
+    overflow-x: auto; /* Ensures table is scrollable on small screens */
+}
+
+.leaderboard-table {
+    width: 100%;
+    border-collapse: collapse; /* Removes space between cells */
+    text-align: left;
+    font-size: 1rem;
+}
+
+.leaderboard-table th {
+    background-image: var(--primary-gradient);
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 16px 20px;
+    font-size: 0.85rem;
+}
+
+/* Style the table headers */
+.leaderboard-table thead th:first-child {
+    border-top-left-radius: 8px;
+}
+
+.leaderboard-table thead th:last-child {
+    border-top-right-radius: 8px;
+}
+
+.leaderboard-table td {
+    padding: 16px 20px;
+    color: var(--subtle-text-color);
+    border-bottom: 1px solid var(--border-color);
+    transition: background-color 0.3s ease;
+}
+
+.leaderboard-table tbody tr {
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* Zebra-striping for readability */
+.leaderboard-table tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* Dark theme zebra-striping */
+body[data-theme='dark'] .leaderboard-table tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+/* Hover effect on rows */
+.leaderboard-table tbody tr:hover {
+    background-color: var(--accent-color);
+}
+.leaderboard-table tbody tr:hover td {
+    color: var(--text-color);
+}
+
+
+/* Styling specific columns */
+.leaderboard-table .rank {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    text-align: center;
+    width: 80px; /* Give it a fixed width */
+}
+
+.leaderboard-table .username {
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.leaderboard-table .points {
+    font-weight: 700;
+    color: var(--success-color);
+    text-align: right;
+}
+
+/* Remove bottom border from the last row */
+.leaderboard-table tbody tr:last-child td {
+    border-bottom: none;
+}

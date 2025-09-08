@@ -1,0 +1,46 @@
+/* client/src/pages/MySubmissions.css */
+.my-submissions-container {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    margin-top: 30px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.my-submissions-container h1 {
+    color: var(--dark-color);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.my-submissions-container p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.my-submissions-container a {
+    font-weight: bold;
+}
+
+.submission-list .submission-card {
+    /* Inherits from Dashboard.css, add specific overrides */
+    margin-bottom: 20px; /* Add space between cards */
+}
+
+.submission-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.submission-card .pow-info {
+    font-size: 0.85rem;
+    color: #777;
+    margin-top: 15px;
+    border-top: 1px dashed var(--border-color);
+    padding-top: 10px;
+}

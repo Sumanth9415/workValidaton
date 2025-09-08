@@ -1,0 +1,126 @@
+/* client/src/pages/AdminSubmissionReview.css */
+.admin-submission-review-container {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    margin-top: 30px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.admin-submission-review-container h1 {
+    color: var(--dark-color);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.task-description, .task-info {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.submission-list {
+    display: grid;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.submission-card {
+    background-color: var(--light-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+.submission-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: 10px;
+}
+
+.submission-card p {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.submission-status {
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.status-pending { background-color: var(--warning-color); color: #333; }
+.status-accepted { background-color: var(--success-color); color: white; }
+.status-rejected { background-color: var(--danger-color); color: white; }
+
+.submission-content {
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.submission-content h4 {
+    color: var(--dark-color);
+    margin-bottom: 10px;
+}
+
+.submission-content pre {
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-break: break-all;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+}
+
+.submission-content a {
+    font-weight: bold;
+}
+
+.pow-details {
+    background-color: #f1f8ff; /* Light blue */
+    border: 1px solid #a7d9f7;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.pow-details h4 {
+    color: var(--info-color);
+    margin-bottom: 10px;
+}
+
+.pow-details p {
+    margin: 5px 0;
+}
+
+.submission-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.back-btn {
+    margin-top: 40px;
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
