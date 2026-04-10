@@ -1,0 +1,13 @@
+{
+  "name": "work-validation-deploy",
+  "version": "1.0.0",
+  "description": "Root configuration for deploying client and server together",
+  "scripts": {
+    "install:server": "cd server && npm install",
+    "install:client": "cd client && npm install --legacy-peer-deps",
+    "install:all": "npm run install:server && npm run install:client",
+    "build:client": "cd client && npm run build",
+    "build": "npm run install:all && npm run build:client",
+    "start": "cd server && npm start"
+  }
+}
